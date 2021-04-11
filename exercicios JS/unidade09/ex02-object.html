@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+            // vai estanciar o objeto e dizer as caracteristicas do produto
+            // var produto = {nome:'caneta', preco:1.99 , cor:'azul'} é a forma simplificada de estanciar o objeto
+            var produto = new Object()
+            produto.nome = 'Caneta'
+            produto.preco = 1.99
+            produto.cor = 'azul'
+            //retorna o valor solicitade para cada caracteristica
+            function retornarInfo(){
+                return 'meu produto' + this.nome + ',custa '+this.preco + 'e é de cor' + this.cor
+            }
+            produto.info = retornarInfo
+            console.log(produto.info())
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

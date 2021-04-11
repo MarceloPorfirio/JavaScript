@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+            //tornando a primeira letra maiuscula
+            var nome = 'marcelo alexandre brys porfirio'
+            //console.log(nome.toUpperCase()) // Converte todas as letras para letra maiuscula
+
+            var letras_minu = nome.toLowerCase(); // deixar tudo minusculo
+            var primeira = letras_minu.charAt(0).toUpperCase(); // deixar a primeira letra maiuscula
+            //concateno com a palavra
+            var primeiro_nome = primeira + letras_minu.substr(1,letras_minu.length)
+            console.log(primeiro_nome.split(' ')[0]) // pego só o primeiro nome e mostro
+
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

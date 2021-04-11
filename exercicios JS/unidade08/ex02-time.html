@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Aulas de Javascript</title>
+        <script>
+            function setDoisDigitos(tempo){// condição de teste para o tempo aparecer os dois digitos
+                if (tempo < 10){
+                    return '0' + tempo
+                }else{
+                    return tempo
+                }
+            }
+            //aplicando a função de dois digitos no horário
+            var agora = new Date()
+            console.log(setDoisDigitos(agora.getHours()) + ':' + setDoisDigitos(agora.getMinutes()) + ':' + setDoisDigitos(agora.getSeconds()))
+
+            //data / hora /minuto/segundo
+            var aniversario = new Date (2013,09,21,6,2,1)
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
